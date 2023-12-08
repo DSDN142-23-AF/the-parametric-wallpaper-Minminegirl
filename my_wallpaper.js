@@ -9,19 +9,21 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 200;
-  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.cell_width  = 300;
+  pWallpaper.grid_settings.cell_height = 300;
   pWallpaper.grid_settings.row_offset  = 50;
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(185, 222, 120); //light honeydew green colour
   
 
 
 }
 
 function my_symbol() { strokeWeight(6)
+  push()
+  scale(0.5)
   stroke(26,30,50)
   fill(255, 235, 156)
   ellipse(350,150,50,150)
@@ -73,5 +75,5 @@ function my_symbol() { strokeWeight(6)
 
   ellipse(375,380,40,40) //hands r l
   ellipse(230,380,40,40) // do not rename this function. Treat this similarly to a Draw function
-  
+  pop()
 }
