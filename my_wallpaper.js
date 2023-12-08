@@ -21,19 +21,7 @@ function wallpaper_background() {
 
 }
 
-function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  
-}
-//setup - run once when the code is first starts
-function setup() {
-  createCanvas(600, 600); // this sets the size of the area in which we can draw things. We call it a canvas
-  textSize(32); // sets the size of the textAscent()
-  background(185, 222, 120); // this makes the whole canvas the screen grey
-}
-//draw - this function loops, the code within read through repeatedly while running
-function draw() {
-
-  strokeWeight(6)
+function my_symbol() { strokeWeight(6)
   stroke(26,30,50)
   fill(255, 235, 156)
   ellipse(350,150,50,150)
@@ -84,4 +72,6 @@ function draw() {
   rect(250,340,100,100) //body
 
   ellipse(375,380,40,40) //hands r l
-  ellipse(230,380,40,40)
+  ellipse(230,380,40,40) // do not rename this function. Treat this similarly to a Draw function
+  
+}
